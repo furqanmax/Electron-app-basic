@@ -1,0 +1,46 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+     "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.example.myapp",   
+    "productName": "My Electron App",   
+    "directories": {
+      "output": "dist"  
+    },
+    "files": [
+      "index.js",
+      "preload.js",   
+      "package.json"
+    ],
+   "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^24.4.0"
+  }
+}
