@@ -7,11 +7,14 @@
     "start": "electron .",
      "build": "electron-builder"
   },
-  "author": "",
+  "author": {
+    "name": "Furqan Ahmed",
+    "email": "furqanmax27@gmail.com"
+  },
   "license": "ISC",
   "build": {
-    "appId": "com.example.myapp",   
-    "productName": "My Electron App",   
+    "appId": "com.example.ivvp",
+    "productName": "IVVP",
     "directories": {
       "output": "dist"  
     },
@@ -23,6 +26,7 @@
    "win": {
       "target": [
         "nsis",
+        "portable",
         "zip"
       ]
     },
@@ -33,10 +37,8 @@
       ]
     },
     "linux": {
-      "target": [
-        "deb",
-        "rpm"
-      ]
+      "target": ["deb", "rpm"],
+      "maintainer": "Furqan Ahmed <furqanmax27@gmail.com>"
     }
   },
   "devDependencies": {

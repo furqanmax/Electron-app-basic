@@ -13,7 +13,7 @@ function createWindow () {
   });
   win.setMenu(null)
   // Replace local HTML file loading with a URL
-  win.loadURL('https://tasktimetracker.surge.sh/index.html');  // Replace with the actual URL you want to load
+  win.loadURL('http://app.ivvponline.com/institutes/login');  // Replace with the actual URL you want to load
 }
 
 app.whenReady().then(() => {
