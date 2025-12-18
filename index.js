@@ -5,6 +5,7 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+     icon: path.join(__dirname, 'assets/icons/icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: false,  // set to false when loading external URL for security reasons
@@ -13,7 +14,7 @@ function createWindow () {
   });
   win.setMenu(null)
   // Replace local HTML file loading with a URL
-  win.loadURL('https://tasktimetracker.surge.sh/index.html');  // Replace with the actual URL you want to load
+  win.loadURL('https://leadnest.ai');  // Replace with the actual URL you want to load
 }
 
 app.whenReady().then(() => {

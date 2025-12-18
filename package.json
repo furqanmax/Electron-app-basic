@@ -1,5 +1,5 @@
 {
-  "name": "electron-app",
+  "name": "leadnest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,15 @@
     "start": "electron .",
      "build": "electron-builder"
   },
-  "author": "",
+  "author": {
+    "name": "Leadnest",
+    "email": "support@leadnest.ai",
+    "url": "https://leadnest.ai"
+  },
   "license": "ISC",
   "build": {
-    "appId": "com.example.myapp",   
-    "productName": "My Electron App",   
+    "appId": "com.example.leadnest",   
+    "productName": "Leadnest",   
     "directories": {
       "output": "dist"  
     },
@@ -21,18 +25,23 @@
       "package.json"
     ],
    "win": {
+    "icon": "assets/icons/icon.ico",
       "target": [
         "nsis",
+        "portable",
         "zip"
       ]
     },
     "mac": {
+      "icon": "assets/icons/icon.icns",
       "target": [
         "dmg",
         "zip"
       ]
     },
     "linux": {
+      "icon": "assets/icons",
+      "category": "Office",
       "target": [
         "deb",
         "rpm"
